@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sohiab — Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="top">
+      <div class="container nav">
+        <a class="logo" href="#top">Sohaib<span>.</span></a>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Software Engineer Student</p>
+          <h1>
+            Aspiring Software Engineer learning to craft
+            <span>modern web & mobile applications</span>
+          </h1>
+          <p class="sub">I build clean & fast web UIs.</p>
+          <div class="cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn ghost" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-pic">
+          <img src="/assets/sohaib.jpg" alt="Profile picture" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>
+          I’m Sohaib Raheem, a Software Engineering student with a strong
+          passion for building modern web and mobile applications. Alongside my
+          degree, I’m also pursuing a professional course in Web & Mobile App
+          Development to enhance my skills in creating efficient, user-friendly,
+          and creative digital solutions. My goal is to keep learning,
+          experimenting, and growing while contributing to innovative projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section alt">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills">
+          <span>JavaScript</span>
+          <span>C++</span>
+          <span>Java</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <div class="card">
+            <a href="https://sohaib-raheem.github.io/Todo-List/">
+              <img src="/assets/airBnb.jpg" alt="Project 1"
+            /></a>
+            <h3>Air-bnb</h3>
+            <p>A simple Ui built with HTML, CSS</p>
+          </div>
+          <div class="card">
+            <a href="https://sohaib-raheem.github.io/Airbnb-clone/"
+              ><img
+                src="/assets/todo.jpg"
+                height="200px"
+                width="300px"
+                alt="Project 2"
+            /></a>
+            <h3>Todo-List</h3>
+            <p>A simple Todo app biult with HTML, CSS & JS</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" onsubmit="return handleSubmit(event)">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button class="btn primary" type="submit">Send</button>
+          <p id="form-msg"></p>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Sohaib — Portfolio</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

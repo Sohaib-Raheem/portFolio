@@ -6,13 +6,14 @@ hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   navLinks.classList.toggle("show");
   overlay.classList.toggle("show");
+  document.body.classList.toggle("menu-open"); // yahan body lock ho jayegi
 });
 
-// Overlay pe click karne se menu close hoga
 overlay.addEventListener("click", () => {
   hamburger.classList.remove("active");
   navLinks.classList.remove("show");
   overlay.classList.remove("show");
+  document.body.classList.remove("menu-open"); // body unlock ho jayegi
 });
 
 // Footer ke liye dynamic year
